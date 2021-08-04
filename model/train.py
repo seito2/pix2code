@@ -5,16 +5,12 @@ __author__ = 'Tony Beltramelli - www.tonybeltramelli.com'
 
 import tensorflow as tf
 
-# sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
 a = tf.constant(1234)
 b = tf.constant(5000)
 
 add_op = a + b
 
-#sess = tf.Session()
-#res = sess.run(add_op) 
-#print(res)
 
 tf.print(add_op)
 
