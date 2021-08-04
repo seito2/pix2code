@@ -159,3 +159,11 @@ datasets/*
 
 # Training output
 bin/
+
+# Output files
+code
+selenium/output
+
+# Chrome driver
+chromedriver_linux64.zip
+*.deb
