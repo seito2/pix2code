@@ -4,7 +4,19 @@ from __future__ import absolute_import
 __author__ = 'Tony Beltramelli - www.tonybeltramelli.com'
 
 import tensorflow as tf
-sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+
+# sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+
+a = tf.constant(1234)
+b = tf.constant(5000)
+
+add_op = a + b
+
+#sess = tf.Session()
+#res = sess.run(add_op) 
+#print(res)
+
+tf.print(add_op)
 
 import sys
 
@@ -62,5 +74,6 @@ if __name__ == "__main__":
         output_path = argv[1]
         use_generator = False if len(argv) < 3 else True if int(argv[2]) == 1 else False
         pretrained_weigths = None if len(argv) < 4 else argv[3]
+
 
     run(input_path, output_path, is_memory_intensive=use_generator, pretrained_model=pretrained_weigths)
