@@ -11,9 +11,6 @@ from classes.Compiler import *
 
 listFiles = glob.glob("../code/*.gui");
 
-print(listFiles)
-
-
 for input_file in listFiles:
     try:
         FILL_WITH_RANDOM_TEXT = True
